@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GoWithUs</string>
+    <string name="pattern_date">dd.MM.yyyy</string>
+    <string name="tvGoWithUsTitle">Let\'s go with us !</string>
+    <string name="tvDirectionBlock">Direction</string>
+    <string name="btnLaunchTicketActivity">OK</string>
+    <string name="tvDateDialogBlock">Date of Direction</string>
+    <string name="btnCalendar">DATE</string>
+    <string name="tvPlaceCount">0</string>
+    <string name="tvPlacesBlock">Places</string>
+    <string name="tvDepartureTimeBlock">Departure Time</string>
+    <string name="tvTicketPriceTitle">One ticket cost ₴</string>
+    <string name="tvActivityTitle">Check your order</string>
+    <string name="tvDirectionTitle">Direction - </string>
+    <string name="tvDateTitle">Date - </string>
+    <string name="tvTimeTitle">Time - </string>
+    <string name="tvNumberOfSeatsTitle">Number of Seats - </string>
+    <string name="tvTotalPriceTitle">Total price, ₴ - </string>
+
+    <string name="Attention">Attention</string>
+    <string name="AttentionText">Selected check-out time is out of date</string>
+    <string name="ToastPastDate">You cannot select a past date</string>
+
+    <string name="menuTitleSpinner">Spinner</string>
+    <string name="menuTitleList">List</string>
+
+    <string name="listUkrMoney">₴</string>
+    <string name="pattern_date_short">dd MMM</string>
+    <string name="pattern_time">HH:mm</string>
+    <string name="hourStr">h</string>
+    <string name="minStr">m</string>
+    <string name="onWayStr">on the way</string>
+    <string name="tvFrom">from</string>
+    <string name="tvTo">to</string>
+    <string name="tvPlacePriceDesc">Per 1 passenger</string>
+    <string name="tvBonusesTitle">Can be bought for bonuses</string>
+</resources>

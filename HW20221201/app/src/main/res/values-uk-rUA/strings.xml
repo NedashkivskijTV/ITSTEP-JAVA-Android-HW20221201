@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GoWithUs</string>
+    <string name="pattern_date">dd.MM.yyyy</string>
+    <string name="tvGoWithUsTitle">Їдемо з нами !</string>
+    <string name="tvDirectionBlock">Напрямок</string>
+    <string name="btnLaunchTicketActivity">OK</string>
+    <string name="tvDateDialogBlock">Дата виїзду</string>
+    <string name="btnCalendar">ДАТА</string>
+    <string name="tvPlaceCount">0</string>
+    <string name="tvPlacesBlock">Кількість місць</string>
+    <string name="tvDepartureTimeBlock">Час відправлення</string>
+    <string name="tvTicketPriceTitle">Вартість одного квитка ₴</string>
+    <string name="tvActivityTitle">Перевірте Ваше замовлення</string>
+    <string name="tvDirectionTitle">Напрямок - </string>
+    <string name="tvDateTitle">Дата - </string>
+    <string name="tvTimeTitle">Час - </string>
+    <string name="tvNumberOfSeatsTitle">Кількість місць - </string>
+    <string name="tvTotalPriceTitle">Загальна вартість, ₴ - </string>
+
+    <string name="Attention">Увага</string>
+    <string name="AttentionText">Обраний час вже минув</string>
+    <string name="ToastPastDate">Ви не можете обрати дату, що минула</string>
+
+    <string name="menuTitleSpinner">Спінер</string>
+    <string name="menuTitleList">Список</string>
+
+    <string name="listUkrMoney">грн.</string>
+    <string name="pattern_date_short">dd MMM</string>
+    <string name="pattern_time">HH:mm</string>
+    <string name="hourStr">г</string>
+    <string name="minStr">х</string>
+    <string name="onWayStr">в дорозі</string>
+    <string name="tvFrom">з</string>
+    <string name="tvTo">до</string>
+    <string name="tvPlacePriceDesc">За 1 пасажира</string>
+    <string name="tvBonusesTitle">Може бути оплачено бонусами</string>
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTimeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05:45"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimeFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="38dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeStart"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeStart"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeStart"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/tvDateStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16 гру"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTimeStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeStart" />
+
+    <TextView
+        android:id="@+id/tvDateFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00 гру"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTimeFinish"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeFinish" />
+
+    <ImageView
+        android:id="@+id/ivBus"
+        android:layout_width="27dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateStart"
+        app:srcCompat="@drawable/bus" />
+
+    <TextView
+        android:id="@+id/tvTravelTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0 г 0 хв в дорозі, без пересадок"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBus"
+        app:layout_constraintStart_toEndOf="@+id/ivBus"
+        app:layout_constraintTop_toTopOf="@+id/ivBus" />
+
+    <ImageView
+        android:id="@+id/ivRoad"
+        android:layout_width="17dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDateFinish"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeFinish"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeFinish"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/road" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvFrom"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/ivRoad"
+        app:layout_constraintTop_toTopOf="@+id/ivRoad" />
+
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTo"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRoad"
+        app:layout_constraintStart_toEndOf="@+id/ivRoad" />
+
+    <TextView
+        android:id="@+id/tvTownStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Zhitomyr"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvFrom"
+        app:layout_constraintTop_toTopOf="@+id/tvFrom" />
+
+    <TextView
+        android:id="@+id/tvTownFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Lviv"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTo"
+        app:layout_constraintStart_toEndOf="@+id/tvTo" />
+
+    <TextView
+        android:id="@+id/tvAddressStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:singleLine="true"
+        android:text="address-------------------------"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/clPrice"
+        app:layout_constraintStart_toEndOf="@+id/tvTownStart"
+        app:layout_constraintTop_toTopOf="@+id/tvTownStart" />
+
+    <TextView
+        android:id="@+id/tvAddressFinish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:singleLine="true"
+        android:text="address-----------------------------------------------------"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTownFinish"
+        app:layout_constraintEnd_toStartOf="@+id/clPrice"
+        app:layout_constraintStart_toEndOf="@+id/tvTownFinish" />
+
+    <TextView
+        android:id="@+id/tvBonusesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tvBonusesTitle"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddressFinish" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvPlacePriceDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvPlacePriceDesc"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlacePrice"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tvPlacePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000 грн."
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvPlacePriceDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
