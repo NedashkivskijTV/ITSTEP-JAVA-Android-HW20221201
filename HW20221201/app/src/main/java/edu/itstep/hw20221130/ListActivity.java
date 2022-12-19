@@ -224,7 +224,7 @@ public class ListActivity extends AppCompatActivity {
     }
 
     private void changeDirectionDate() {
-        // отримання поточної дани для виділення у ДатаПікер
+        // отримання поточної дати для виділення у ДатаПікер
         Calendar calendar = Calendar.getInstance();
         int presentYear = calendar.get(Calendar.YEAR);
         int presentMonth = calendar.get(Calendar.MONTH);

@@ -191,8 +191,8 @@ public class MainActivity extends AppCompatActivity {
     private void makeAdapters() {
         // створення адаптера для Спінера вибору напрямку
         adapterDirection = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, directionDB.getDirectionsNamesArr()); // ініціалізація адаптера
-        spDirection.setSelection(directionPosition); // встановлення елемента, що відображатиметься при завантаженні Актівіті
         spDirection.setAdapter(adapterDirection); // встановлення Adapter у елемент Spinner
+        spDirection.setSelection(directionPosition); // встановлення елемента, що відображатиметься при завантаженні Актівіті
 
         // створення адаптера для Спінера вибору часу відправлення
         //makeAdapterDepartureTime();
